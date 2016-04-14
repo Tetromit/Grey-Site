@@ -20,8 +20,8 @@ body{
     background: url(/img/concrete_seamless.png)
 }
 .container{
-    width: 90%;
-    margin: 12px auto;
+    width: 100%;
+    margin: 0px auto;
 }
 [class*="col"]{
     float: left;
@@ -34,9 +34,6 @@ body{
 }
 [class*="col"]:last-child{
     margin-right: 0;
-}
-.row{
-    margin-bottom: 40px;
 }
 .col-1  {width: 8.3%;}
 .col-2  {width: 16.66%;}

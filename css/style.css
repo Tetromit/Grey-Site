@@ -88,10 +88,31 @@ body{
     padding: 0;
 }
 body{
+    
+/*    Попытка Создать Градиент Руками - Удалась Криво ))*/
+    
 /*
     background: linear-gradient(-45deg, rgba(255,255,255,0.2) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 0), rgb(170, 204, 0);
     background-size: 50px 50px;
 */
     background-image: url(/img/bg.jpg);
 }
-.co
+.wrapper>ul li{
+    list-style: none;
+}
+.wrapper>ul>li{
+    float: left;
+    margin-left: 1%;
+}
+.wrapper>ul>li>ul{
+    position: absolute;
+    top: 4%;
+    left: 18.5%;
+    opacity: 0;
+/*    display: none;*/
+    overflow: hidden;
+}
+.wrapper>ul>li:nth-of-type(3):hover>ul{
+    opacity: 1;
+/*    display: block;*/
+}

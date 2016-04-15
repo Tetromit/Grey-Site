@@ -109,26 +109,40 @@ a,p,.wrapper>ul>li>ul{
 }
 .wrapper>ul>li{
     float: left;
-    line-height: 104%;
-    border-left:1px solid red;
-    height: 54%;
-    margin-top: 1%;
+    line-height: 81%;
+    border-left:1px solid #727272;
+    height: 35%;
+    margin-top: 1.3%;
+    padding-top: 0.0%;
 }
 .wrapper>ul>li>ul{
     position: absolute;
-    top: 5.6%;
+    top: 5.1%;
     left: 32.2%;
     display: none;
     overflow: hidden;
-    background: black;
+    background: #222222;
     width: 10.3%;
     height: 22.8%;
     border-radius: 0 0px 7px 7px;
 }
 .wrapper>ul>li>ul>li{
     height: 25%%;
-    text-indent: 12%;
-    line-height: 285%;
+    text-indent: 6%;
+    line-height: 314%;
+    border-bottom: 1px solid grey;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.wrapper>ul>li>ul>li:nth-of-type(2){
+    line-height: 243%;
+    letter-spacing: 0.7px;
+}
+.wrapper>ul>li>ul>li:nth-of-type(4){
+    line-height: 209%;
+    letter-spacing: 0.2px;
+    border-bottom: none;
 }
 li>a:hover{
     color: #ffffff;
@@ -144,7 +158,23 @@ li>a{
 .wrapper>ul>li:nth-of-type(4):hover>ul{
     display: block;
     animation-name: drop;
-    animation-duration: 5s;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.wrapper>ul>li:nth-of-type(4)>ul:hover{
+    display: block;
+}
+@keyframes drop{
+    0%{
+        
+        margin-top: 1%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
 }
 
 .wrapper{
@@ -161,28 +191,41 @@ li>a{
     width: 89%;
     height: 100%;
 }
+.wrapper>ul>li:nth-of-type(1) {
+    border-left: none;
+}
 .wrapper>ul>li:nth-of-type(2) {
-    margin-left: 1.9%;
+    margin-left: 0.2%;
+    padding-left: 1.0%;
+    border-left: none;
 }
 .wrapper>ul>li:nth-of-type(3) {
-    margin-left: 2.0%;
+    margin-left: 0.9%;
     letter-spacing: 0.4px;
-    padding-left: 1.1%;
+    padding-left: 0.8%;
+    width: 12.4%;
+    border-right: 1px solid grey;
 }
 .wrapper>ul>li:nth-of-type(4) {
-    margin-left: 1.7%;
+    margin-left: 0.1%;
     letter-spacing: 0.4px;
+    padding-left: 0.8%;
+    height: 72%;
+    border-left: none;
 }
 .wrapper>ul>li:nth-of-type(5) {
-    margin-left: 1.9%;
+    margin-left: 0.9%;
     letter-spacing: 0.4px;
+    padding-left: 0.8%;
 }
 .wrapper>ul>li:nth-of-type(6) {
-    margin-left: 1.6%;
+    margin-left: 0.5%;
+    padding-left: 1.0%;
+
 }
 .wrapper-1>a {
-    margin-left: 12.0%;
-    letter-spacing: 0.5px;
+    margin-left: 12.4%;
+    letter-spacing: 0.3px;
 }
 span{
     font-weight: 600;

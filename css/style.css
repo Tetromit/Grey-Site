@@ -269,7 +269,7 @@ main {
     height: 2582px;
     margin: 0 auto;
     position: absolute;
-    top: 28.1%;
+    top: 26.2%;
     left: 13.5%
 }
 main>nav{
@@ -474,11 +474,12 @@ main>nav{
     position: absolute;
     top: 4.1%;
     left: 2.4%;
+    opacity: 1;
+    z-index: 0;
 }
 .slider>ul{
     list-style: none;
     width: 100%;
-/*    height: 230px;*/
 }
 .slider label {
     width: 10.2%;
@@ -499,7 +500,7 @@ main>nav{
     overflow:hidden;
     visibility: hidden;
     position: absolute;
-    top: 12%;
+    top: 10%;
     left: 50%;
 }
 .slider label:nth-of-type(1){
@@ -529,4 +530,116 @@ main>nav{
     top: 14.2%;
     left: 12.2%;
     border-radius: 5px;
+}
+.arrow-white-1,.arrow-white-2,.arrow-black,.arrow-black-1{
+    position: absolute;
+    top: 14.5%;
+    z-index: 100;
+    border: 1px solid #c6c6c6;
+
+}
+/*         Arrow - left
+============================================================ 
+*/
+
+.arrow-white-1{
+    left: 13.3%;
+    border-radius: 5px 0 0 5px;
+    height: 2.4%;
+    overflow: hidden;
+    transition: opacity 0.4s ease;
+}
+.arrow-white-2{
+    left: 84.5%;
+    border-radius: 0 5px 5px 0;
+    height: 2.4%;
+    overflow: hidden;
+    opacity: 1;
+    display: block;
+    transition: opacity 0.4s ease;
+}
+.arrow-black {
+    height: 2.4%;
+    overflow: hidden;
+    border-radius: 0 5px 5px 0;
+    left: 84.6%;
+    z-index: 60;
+    opacity: 1;
+    display: block;
+}
+body .arrow-black>img {
+    margin-left: 0px;
+    margin-top: 1px;
+}
+.arrow-white-2:hover{
+    opacity: 0;
+}
+/*         Arrow - right
+============================================================ 
+*/
+body .arrow-black-1 {
+    height: 2.4%;
+    overflow: hidden;
+    border-radius: 0 5px 5px 0;
+    left: 13.3%;
+    opacity: 1;
+    display: block;
+    transform: rotate(180deg);
+    z-index: 60;
+}
+body .arrow-black-1>img {
+    margin-top: -2px;
+}
+.arrow-white-1:hover{
+    opacity: 0;
+}
+/*         Sliders-min part 
+============================================================ 
+*/
+.slider label img {
+    transition: outline 0.1s ease-out;
+}
+.slider label:nth-of-type(1):hover>img {
+    outline: 3px solid black;
+}
+.slider label:nth-of-type(2):hover>img {
+    outline: 3px solid black;
+}
+.slider label:nth-of-type(3):hover>img {
+    outline: 3px solid black;
+}
+.slider label:nth-of-type(4):hover>img {
+    outline: 3px solid black;
+}
+.slider label:nth-of-type(5):hover>img {
+    outline: 3px solid black;
+}
+.slider label:nth-of-type(6):hover>img {
+    outline: 3px solid black;
+}
+
+
+.slider input[name="cheker"]#switcher-1:checked~ul>li:nth-of-type(1) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+    z-index: 20;
+    opacity: 1;
 }

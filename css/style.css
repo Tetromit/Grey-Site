@@ -478,15 +478,25 @@ main>nav{
     opacity: 1;
     z-index: 0;
 }
-.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2){
+/*         Scale 1.1 % Animation
+============================================================ 
+*/
+
+.slider input[name="cheker"]#switcher-1:checked~ul>li:nth-of-type(1),
+.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2),
+.slider input[name="cheker"]#switcher-3:checked~ul>li:nth-of-type(3),
+.slider input[name="cheker"]#switcher-4:checked~ul>li:nth-of-type(4),
+.slider input[name="cheker"]#switcher-5:checked~ul>li:nth-of-type(5),
+.slider input[name="cheker"]#switcher-6:checked~ul>li:nth-of-type(6){
     animation-name: trans;
-    animation-duration: 1.4s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes trans {
     0%{
-        transform: scale(1.1);
+        transform: scale(1.2);
         opacity: 0;
     }
     100%{
@@ -494,6 +504,10 @@ main>nav{
         opacity: 1;
     }
 }
+/*         Animation End
+============================================================ 
+*/
+
 .slider>ul{
     list-style: none;
     width: 100%;
@@ -512,6 +526,7 @@ main>nav{
 }
 .slider label img {
     border: 1px solid grey;
+    margin-top: 1.0px;
 }
 .slider input {
     overflow:hidden;
@@ -635,64 +650,6 @@ body .arrow-black-1>img {
     outline: 3px solid black;
 }
 
-
-.slider input[name="cheker"]#switcher-1:checked~ul>li:nth-of-type(1) {
-    z-index: 20;
-    opacity: 1;
-}
-.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
-    z-index: 20;
-    opacity: 1;
-}
-.slider input[name="cheker"]#switcher-3:checked~ul>li:nth-of-type(3) {
-    z-index: 20;
-    opacity: 1;
-}
-.slider input[name="cheker"]#switcher-4:checked~ul>li:nth-of-type(4) {
-    z-index: 20;
-    opacity: 1;
-}
-.slider input[name="cheker"]#switcher-5:checked~ul>li:nth-of-type(5) {
-    z-index: 20;
-    opacity: 1;
-}
-.slider input[name="cheker"]#switcher-6:checked~ul>li:nth-of-type(6) {
-    z-index: 20;
-    opacity: 1;
-}
-
-/*  inscription - Start*/
-.slider input[name="cheker"]#switcher-1:checked~.inscription-1 {
-    z-index: 101;
-    opacity: 1;
-}
-.slider input[name="cheker"]#switcher-2:checked~.inscription-2 {
-    z-index: 101;
-    opacity: 1;
-}
-.slider input[name="cheker"]#switcher-3:checked~.inscription-3 {
-    z-index: 101;
-    opacity: 1;
-}
-
-.slider input[name="cheker"]#switcher-4:checked~.inscription-4 {
-    z-index: 101;
-    opacity: 1;
-}
-
-.slider input[name="cheker"]#switcher-5:checked~.inscription-5 {
-    z-index: 101;
-    opacity: 1;
-}
-
-.slider input[name="cheker"]#switcher-6:checked~.inscription-6 {
-    z-index: 101;
-    opacity: 1;
-}
-
-
-
-/*  inscription - End*/
 main nav .col-12>ul {
     background: #2A2A2A;
     width: 100.4%;
@@ -705,14 +662,29 @@ main nav .col-12>ul {
 .inscription-6{
     width: 56%;
     height:79px;
-    z-index: 101;
+    z-index: 1000;
     position: absolute;
     top: 5.6%;
     left: 6.8%;
     margin-top: -1.6%;
     margin-left: -2.5%;
-    opacity: 0;
+    opacity: 0;    
 }
+@keyframes ins {
+    0%{
+        opacity: 0;    
+    }
+/*
+    50%{
+        opacity: 0;    
+
+    }
+*/
+    100%{
+        opacity: 1;    
+    }
+}
+
 .inscription-1 h3,
 .inscription-2 h3,
 .inscription-3 h3,
@@ -749,3 +721,82 @@ main nav .col-12>ul {
     background: black;
     border-radius: 0px 0 7px 7px;
 }
+
+
+.slider input[name="cheker"]#switcher-1:checked~ul>li:nth-of-type(1) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-3:checked~ul>li:nth-of-type(3) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-4:checked~ul>li:nth-of-type(4) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-5:checked~ul>li:nth-of-type(5) {
+    z-index: 20;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-6:checked~ul>li:nth-of-type(6) {
+    z-index: 20;
+    opacity: 1;
+}
+
+/*  inscription - Start*/
+
+.slider input[name="cheker"]#switcher-1:checked~.inscription-1 {
+    z-index: 101;
+/*    opacity: 1;*/
+    animation-name: ins;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.slider input[name="cheker"]#switcher-2:checked~.inscription-2 {
+    z-index: 101;
+/*    opacity: 1;*/
+    animation-name: ins;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.slider input[name="cheker"]#switcher-3:checked~.inscription-3 {
+    z-index: 101;
+    opacity: 1;
+}
+
+.slider input[name="cheker"]#switcher-4:checked~.inscription-4 {
+    z-index: 101;
+    opacity: 1;
+}
+
+.slider input[name="cheker"]#switcher-5:checked~.inscription-5 {
+    z-index: 101;
+    opacity: 1;
+}
+
+.slider input[name="cheker"]#switcher-6:checked~.inscription-6 {
+    z-index: 101;
+    opacity: 1;
+}
+
+
+/*  inscription - End*/
+
+/*         WTF ??? Почему Это не Работает ???!!!
+============================================================ 
+*/
+
+.wrapper-images>li:nth-of-type(1):hover~.inscription-1{
+    opacity: 1;
+/*    margin-left: 12px;*/
+}
+/*          ??????????????????????
+============================================================ 
+*/

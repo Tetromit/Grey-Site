@@ -270,7 +270,8 @@ main {
     margin: 0 auto;
     position: absolute;
     top: 26.2%;
-    left: 13.5%
+    left: 13.5%;
+    background: white;
 }
 main>nav{
     width: 100%;
@@ -477,6 +478,22 @@ main>nav{
     opacity: 1;
     z-index: 0;
 }
+.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2){
+    animation-name: trans;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes trans {
+    0%{
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 .slider>ul{
     list-style: none;
     width: 100%;
@@ -489,7 +506,7 @@ main>nav{
     display: inline-block;
     z-index: 50;
     border: 1px solid grey;
-    padding-top: 0.2%;
+    padding-top: -3.8%;
     padding-left: 0.3%
 
 }
@@ -627,19 +644,108 @@ body .arrow-black-1>img {
     z-index: 20;
     opacity: 1;
 }
-.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+.slider input[name="cheker"]#switcher-3:checked~ul>li:nth-of-type(3) {
     z-index: 20;
     opacity: 1;
 }
-.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+.slider input[name="cheker"]#switcher-4:checked~ul>li:nth-of-type(4) {
     z-index: 20;
     opacity: 1;
 }
-.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+.slider input[name="cheker"]#switcher-5:checked~ul>li:nth-of-type(5) {
     z-index: 20;
     opacity: 1;
 }
-.slider input[name="cheker"]#switcher-2:checked~ul>li:nth-of-type(2) {
+.slider input[name="cheker"]#switcher-6:checked~ul>li:nth-of-type(6) {
     z-index: 20;
     opacity: 1;
+}
+
+/*  inscription - Start*/
+.slider input[name="cheker"]#switcher-1:checked~.inscription-1 {
+    z-index: 101;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-2:checked~.inscription-2 {
+    z-index: 101;
+    opacity: 1;
+}
+.slider input[name="cheker"]#switcher-3:checked~.inscription-3 {
+    z-index: 101;
+    opacity: 1;
+}
+
+.slider input[name="cheker"]#switcher-4:checked~.inscription-4 {
+    z-index: 101;
+    opacity: 1;
+}
+
+.slider input[name="cheker"]#switcher-5:checked~.inscription-5 {
+    z-index: 101;
+    opacity: 1;
+}
+
+.slider input[name="cheker"]#switcher-6:checked~.inscription-6 {
+    z-index: 101;
+    opacity: 1;
+}
+
+
+
+/*  inscription - End*/
+main nav .col-12>ul {
+    background: #2A2A2A;
+    width: 100.4%;
+}
+.inscription-1,
+.inscription-2,
+.inscription-3,
+.inscription-4,
+.inscription-5,
+.inscription-6{
+    width: 56%;
+    height:79px;
+    z-index: 101;
+    position: absolute;
+    top: 5.6%;
+    left: 6.8%;
+    margin-top: -1.6%;
+    margin-left: -2.5%;
+    opacity: 0;
+}
+.inscription-1 h3,
+.inscription-2 h3,
+.inscription-3 h3,
+.inscription-4 h3,
+.inscription-5 h3,
+.inscription-6 h3{
+    letter-spacing: -1.0px;
+    color: aliceblue;
+    width: 91%;
+    height: 40px;
+    display: block;
+    margin-top: 1.4%;
+    margin-left: 2.3%;
+    padding-left: 2.1%;
+    padding-top: 1.6%;
+    background: black;
+    border-radius: 7px 7px 7px 0;
+}
+.inscription-1 p,
+.inscription-2 p,
+.inscription-3 p,
+.inscription-4 p,
+.inscription-5 p,
+.inscription-6 p{
+    letter-spacing: -1.0px;
+    color: aliceblue;
+    margin-top: -0.1%;
+    margin-left: 2.3%;
+    letter-spacing: 0.8px;
+    width: 54%;
+    height: 20px;
+    padding-left: 2.7%;
+    padding-top: -4.5%;  
+    background: black;
+    border-radius: 0px 0 7px 7px;
 }

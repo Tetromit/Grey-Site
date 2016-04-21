@@ -469,7 +469,7 @@ main>nav{
 
 .slider{
     width: 100%;
-    height: 446px;
+    height: 409px;
 }
 .slider>ul>li {
     position: absolute;
@@ -674,12 +674,12 @@ main nav .col-12>ul {
     0%{
         opacity: 0;    
     }
-/*
+    /*
     50%{
-        opacity: 0;    
+    opacity: 0;    
 
-    }
-*/
+}
+    */
     100%{
         opacity: 1;    
     }
@@ -752,7 +752,7 @@ main nav .col-12>ul {
 
 .slider input[name="cheker"]#switcher-1:checked~.inscription-1 {
     z-index: 101;
-/*    opacity: 1;*/
+    /*    opacity: 1;*/
     animation-name: ins;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -760,7 +760,7 @@ main nav .col-12>ul {
 }
 .slider input[name="cheker"]#switcher-2:checked~.inscription-2 {
     z-index: 101;
-/*    opacity: 1;*/
+    /*    opacity: 1;*/
     animation-name: ins;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -795,8 +795,95 @@ main nav .col-12>ul {
 
 .wrapper-images>li:nth-of-type(1):hover~.inscription-1{
     opacity: 1;
-/*    margin-left: 12px;*/
+    /*    margin-left: 12px;*/
 }
 /*          ??????????????????????
 ============================================================ 
 */
+.bg-grad{
+    width: 95%;
+    height: 37px; 
+    background-image: url(/img/little%20gradient.jpg);
+    position: absolute;
+    display: block;
+    top: 16.3%;
+    left: 2.6%
+}
+
+/*                         
+*                           Block - "Content"
+============================================================================
+*/
+.row>.col-6 {
+    padding: 0;
+}
+.row>.col-6>h4 {
+    margin-top: 5.2%;
+    margin-left: 2.7%;
+    font-size: 0.8rem;
+    letter-spacing: 0.0px;
+}
+.row>.col-6>img {
+    margin-top: 6.4%;
+    margin-left: 1.8%;
+    padding-top: 0;
+    /*    width: 100%;*/
+}
+.row>.col-6>p:nth-of-type(1) {
+    margin-left: 2.8%;
+    margin-top: 6.1%;
+    font-size: 0.8rem;
+    letter-spacing: -0.3px;
+    font-style: normal;
+}
+.row>.col-6>p:nth-of-type(2) {
+    margin-left: 3.0%;
+    margin-top: 3.7%;
+    font-size: 0.8rem;
+    letter-spacing: -0.3px;
+    font-style: normal;
+}
+.row>.col-6>p:nth-of-type(3) {
+    margin-left: 3.0%;
+    margin-top: 3.7%;
+    font-size: 0.8rem;
+    letter-spacing: -0.3px;
+    font-style: normal;
+    line-height: 146%;
+}
+.col-6 .row {
+    padding: 0;
+}
+.col-6 .row .col-3 {
+    margin-top: 12.9%;
+    margin-left:-2.2%;
+}
+.col-6 .row .col-9 h3 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: -0.1px;
+    margin-top: 19.6%;
+    margin-left: -8.3%;
+    line-height: 146%;
+}
+.col-6 .row .col-9 h3+p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    margin-top: 1.9%;
+    margin-left: -8.3%;
+    line-height: 146%;
+}
+
+/*    Second col-6
+=======================
+*/
+
+.row>.col-6:nth-of-type(2) {
+    margin-left: -0.4%;
+}
+.col-8>.content>.row:nth-of-type(2) {
+    margin-top: 1.1%;
+}
+
+
